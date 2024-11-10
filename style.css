@@ -54,11 +54,11 @@ p {
   /* max-width: 90vw; */
 }
 
-.smallpictures {
+/* img {
   margin: 0rem 2rem 1rem 2rem;
   border: 1px solid black;
   max-width: 30em;
-}
+} */
 
 .gallery-img {
   margin-bottom: 1rem;
@@ -187,11 +187,11 @@ ul li:hover ul.dropdown {
   height: 100%;
 } */
 
-/* img {
+img {
   width: 100%;
   height: auto;
   vertical-align: bottom;
-} */
+}
 
 #marsspan {
   color: thistle;
@@ -201,10 +201,47 @@ ul li:hover ul.dropdown {
   color: rgb(39, 39, 39);
 }
 
+/* ------------- */
+/* -- FOOTER -- */
+/* ----------- */
+
 footer {
   margin-top: auto;
   width: 100%;
   height: 2.5rem;
   background-color: rgb(31, 31, 31);
   text-align: center;
+  line-height: 2.5rem;
+}
+
+/* ------------- */
+/* -- MEDIA -- */
+/* ----------- */
+
+@media screen and (min-width: 390px) {
+  .gallery-img {
+    display: flex;
+    flex-direction: row;
+
+    /* flex-wrap: wrap; */
+    margin-inline: 0;
+    /* margin-inline: 0; */
+    /* max-width: 20rem; */
+    /* flex-wrap: wrap; */
+  }
+  #gallery-css {
+    /* display: flex;
+    flex-direction: row;
+    align-items: center; */
+    /* flex-wrap: wrap; */
+    /* max-width: 100%; */
+    width: 100rem;
+    height: 60rem;
+  }
+
+  main {
+    display: flex;
+    flex-direction: column;
+    min-height: 60rem;
+  }
 }
