@@ -44,7 +44,8 @@ h3 {
 
 p {
   color: white;
-  padding: 1rem 2rem 3rem 2rem;
+  padding: 2rem 2rem 3rem 2rem;
+  margin-top: 1rem;
   font-family: "Merriweather", serif;
   font-weight: 400;
   font-style: normal;
@@ -163,7 +164,7 @@ ul li:hover ul.dropdown {
 
 #saturn {
   min-height: 40rem;
-  background-color: crimson;
+  background-color: rgb(58, 55, 55);
 }
 
 #gallery {
@@ -218,30 +219,39 @@ footer {
 /* -- MEDIA -- */
 /* ----------- */
 
-@media screen and (min-width: 390px) {
+@media screen and (min-width: 391px) {
   .gallery-img {
-    display: flex;
-    flex-direction: row;
+    /* max-width: 20rem; */
+    flex: 1 1 calc(33.333% - 20px);
 
-    /* flex-wrap: wrap; */
-    margin-inline: 0;
     /* margin-inline: 0; */
     /* max-width: 20rem; */
     /* flex-wrap: wrap; */
   }
   #gallery-css {
-    /* display: flex;
+    display: flex;
     flex-direction: row;
-    align-items: center; */
+    flex-wrap: wrap;
+    /* align-items: center; */
     /* flex-wrap: wrap; */
     /* max-width: 100%; */
-    width: 100rem;
-    height: 60rem;
+    /* width: 100rem; */
+    /* height: 60em; */
+    max-width: 2000px;
+    gap: 20px;
   }
 
   main {
     display: flex;
     flex-direction: column;
     min-height: 60rem;
+  }
+
+  #smallpictures {
+    max-width: 40rem;
+    margin-left: 4em;
+    margin-right: 1em;
+    float: right;
+    border-radius: 5px;
   }
 }
